@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extensions">
+  <schema path="/org/gnome/shell/extensions/athan/" id="org.gnome.shell.extensions.athan">
+
+    <key type="i" name="calculation-method">
+        <default>0</default>
+        <summary>Calculation method</summary>
+        <description>Calculation method</description>
+    </key>
+
+    <key type="i" name="madhab">
+        <default>0</default>
+        <summary>Madhab</summary>
+        <description>Madhab for calculating of Asr time</description>
+    </key>
+
+    <key type="b" name="auto-location">
+        <default>true</default>
+        <summary>Automatic location</summary>
+        <description>Whether or not to use GeoClue2 to detect the location</description>
+    </key>
+
+    <key type="d" name="latitude">
+        <default>34.8406</default>
+        <summary>Latitude</summary>
+        <description>Latitude of your location</description>
+    </key>
+
+    <key type="d" name="longitude">
+        <default>10.7603</default>
+        <summary>Longitude</summary>
+        <description>Longitude of your location</description>
+    </key>
+
+    <key type="i" name="panel-position">
+        <default>0</default>
+        <summary>Panel position</summary>
+        <description>Position in the top panel</description>
+    </key>
+
+    <key type="b" name="time-format-12">
+        <default>false</default>
+        <summary>AM/PM time format</summary>
+        <description>Set time format to AM/PM hours</description>
+    </key>
+
+    <key type="i" name="timezone">
+        <default>0</default>
+        <summary>Timezone</summary>
+        <description>Timezone of your location</description>
+    </key>
+    
+    <key type="i" name="hijri-date-adjustment">
+        <default>0</default>
+        <summary>Adjustment</summary>
+        <description>Adjustment of the Hijri date</description>
+    </key>
+
+    <key type="i" name="concise-list">
+      <default>1</default>
+      <summary>Which times to show</summary>
+    </key>
+
+    <key type="b" name="iqamah">
+        <default>true</default>
+        <description>Display the current prayer time until the Iqamah</description>
+    </key>
+
+    <key type="i" name="iqamah-fajr">
+      <default>35</default>
+    </key>
+
+    <key type="i" name="iqamah-dhuhr">
+      <default>20</default>
+    </key>
+
+    <key type="i" name="iqamah-asr">
+      <default>20</default>
+    </key>
+
+    <key type="i" name="iqamah-maghrib">
+      <default>15</default>
+    </key>
+
+    <key type="i" name="iqamah-isha">
+      <default>20</default>
+    </key>
+
+    <key type="b" name="notify-for-azan">
+        <default>true</default>
+        <description>Notify me when it's time for azan</description>
+    </key>
+
+    <key type="i" name="notify-before-azan">
+        <default>0</default> <!-- OFF -->
+        <description>Notify me before azan</description>
+    </key>
+
+    <key type="i" name="notify-before-iqamah">
+        <default>0</default> <!-- OFF -->
+        <description>Notify me before Iqamah</description>
+    </key>
+  </schema>
+</schemalist>
