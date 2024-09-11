@@ -499,8 +499,8 @@ const Azan = GObject.registerClass(
         _handlePrayerNotifications(isAfterAzan, minDiffMinutes, nearestPrayerId, timesStr) {
             if (this._opt_notification_before_azan && this._opt_notification_before_azan * 5 == minDiffMinutes) {
                 Main.notify(
-                    _(minDiffMinutes + ' minutes remaining until ' + this._timeNames[nearestPrayerId]) + ' prayer.',
-                    _('Prayer time : ' + timesStr[nearestPrayerId])
+                    _('تبقي' + minDiffMinutes + 'دقائق علي صلاة' + this._timeNames[nearestPrayerId]),
+                    _('موعد صلاة : ' + timesStr[nearestPrayerId])
                 );
             }
 
@@ -511,7 +511,7 @@ const Azan = GObject.registerClass(
                 this._currIqamahOffset - this._opt_notification_before_iqamah * 5 == -1 * minDiffMinutes
             ) {
                 Main.notify(
-                    _(this._opt_notification_before_iqamah * 5 + ' minutes remaining until ' + this._timeNames[nearestPrayerId]) +
+                    _('تبقي'+this._opt_notification_before_iqamah * 5 + 'علي صلاة' + this._timeNames[nearestPrayerId]) +
                         ' iqamah.'
                 );
             }
